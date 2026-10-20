@@ -47,7 +47,7 @@ export function ProjectDetailPage({ path, platformName, username }: AdminPagePro
       <SectionStack>
         <h1>{project.slug}</h1>
 
-        <Table>
+        <Table className="void-admin-detail-table">
           <TableBody>
             <TableRow>
               <TableHeaderCell>ID</TableHeaderCell>

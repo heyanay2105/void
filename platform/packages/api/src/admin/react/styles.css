@@ -738,6 +738,13 @@ body {
 .void-admin-invitations-table td {
   white-space: nowrap;
 }
+.void-admin-detail-table th {
+  /* Side labels take only the width they need. */
+  width: 1%;
+}
+.void-admin-detail-table tr:last-child th {
+  border-bottom-width: 0;
+}
 .void-admin-pagination {
   display: flex;
   align-items: center;
