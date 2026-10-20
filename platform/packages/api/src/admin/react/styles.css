@@ -174,6 +174,20 @@ body {
   align-items: flex-start;
   gap: var(--spacing-2);
 }
+/* On phones, the account button stacks above the menu button and can shrink. */
+.void-admin-shell .astryx-top-nav[data-mode='mobile-bar'] > :last-child {
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 0;
+}
+/* Room around the stacked brand, matching the phone top bar. */
+.void-admin-shell .astryx-top-nav:not([data-mode]) {
+  padding-block: var(--spacing-4);
+}
+.astryx-mobile-nav :has(> .void-admin-brand) {
+  height: auto;
+  padding-block: var(--spacing-4);
+}
 
 .void-admin-logo {
   display: block;
