@@ -89,6 +89,15 @@ body {
 .void-admin-content .astryx-field {
   max-width: 100%;
 }
+/* On wide screens, page tables line up with the content; cards keep their own edges. */
+@media (min-width: 701px) {
+  .void-admin-content {
+    --container-padding-inline-start: 0px;
+    --container-padding-inline-end: 0px;
+    --container-padding-block-start: 0px;
+    --container-padding-block-end: 0px;
+  }
+}
 
 /* Stack gaps own vertical rhythm, including headings and empty states. */
 .void-admin-stack,
