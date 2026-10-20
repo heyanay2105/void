@@ -78,6 +78,17 @@ body {
 .void-admin-content {
   width: 100%;
 }
+/* Columns size to their content and keep words whole, so wide tables scroll on narrow screens. */
+.void-admin-content th,
+.void-admin-content td {
+  max-width: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+/* Fields keep their width but fit narrow screens. */
+.void-admin-content .astryx-field {
+  max-width: 100%;
+}
 
 /* Stack gaps own vertical rhythm, including headings and empty states. */
 .void-admin-stack,
@@ -267,13 +278,10 @@ body {
 }
 
 .void-admin-team-table-scroll {
-  --container-padding-inline-start: 0px;
-  --container-padding-inline-end: 0px;
   --container-padding-block-start: 0px;
   --container-padding-block-end: 0px;
   min-width: 0;
   max-width: 100%;
-  overflow-x: auto;
 }
 .void-admin-team-email {
   display: block;
